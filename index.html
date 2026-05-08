@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dallas Caley | Software Engineer, Leader & Founder</title>
+    <title>Dallas Caley | Software Engineer, Leader &amp; Founder</title>
     <meta name="description" content="Dallas Caley is a technology leader and entrepreneur with 20+ years of experience building software, leading teams, and growing businesses.">
-    
+
     <style>
         body {
             margin: 0;
@@ -82,13 +82,81 @@
         .btn:hover {
             background: #0ea5e9;
         }
+
+        .skill-tag {
+            cursor: pointer;
+            color: #7dd3fc;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 2px;
+            transition: color 0.15s;
+        }
+
+        .skill-tag:hover {
+            color: #38bdf8;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.85);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-box {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 30px 30px 24px;
+            max-width: 520px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-title {
+            color: #38bdf8;
+            margin: 0 0 14px 0;
+            font-size: 1.4em;
+            padding-right: 24px;
+        }
+
+        .modal-body {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 1.4em;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0;
+        }
+
+        .modal-close:hover {
+            color: #e2e8f0;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Dallas Caley</h1>
-    <p>Dallas Caley | Software, Strategy & Business</p>
+    <p>Dallas Caley | Software, Strategy &amp; Business</p>
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -104,10 +172,10 @@
         Hi, I'm Dallas, I don't quite fit into the mold of anyone you may have encountered in the past.  I came from nothing, no education no money and worked my way up running my own businesses and also writing code and eventually leading teams of developers.
     </p>
     <p>
-        After having accomplished a lot with no credentials, I decided to go back to school and get a bachelors degree in business and start another company of like-minded individuals to see if i could take it to the next level. 
+        After having accomplished a lot with no credentials, I decided to go back to school and get a bachelors degree in business and start another company of like-minded individuals to see if i could take it to the next level.
     </p>
-    <p>    
-        That is where I am now.  I enjoy crossing the chasm between technology and business in ways that I have not seen done in the past.  I speak the language of both groups and I think this will lead to something great. 
+    <p>
+        That is where I am now.  I enjoy crossing the chasm between technology and business in ways that I have not seen done in the past.  I speak the language of both groups and I think this will lead to something great.
     </p>
 </section>
 
@@ -131,64 +199,64 @@
 <section id="skills">
     <h2>Skills</h2>
     <p>
-        <b>Languages</b> - JavaScript, Node.js, TypeScript, Python, C#.NET, PowerShell, PHP, Kotlin, Swift
+        <b>Languages</b> - <span class="skill-tag" data-skill="javascript">JavaScript</span>, <span class="skill-tag" data-skill="nodejs">Node.js</span>, <span class="skill-tag" data-skill="typescript">TypeScript</span>, <span class="skill-tag" data-skill="python">Python</span>, <span class="skill-tag" data-skill="csharp">C#.NET</span>, <span class="skill-tag" data-skill="powershell">PowerShell</span>, <span class="skill-tag" data-skill="php">PHP</span>, <span class="skill-tag" data-skill="kotlin">Kotlin</span>, <span class="skill-tag" data-skill="swift">Swift</span>
     </p>
     <p>
-        <b>Markup & Style</b> - HTML-1 (Email) & HTML-5 (everything else), CSS (SASS, SCSS, LESS), XHTML
+        <b>Markup &amp; Style</b> - <span class="skill-tag" data-skill="html1">HTML-1</span> (Email) &amp; <span class="skill-tag" data-skill="html5">HTML-5</span> (everything else), <span class="skill-tag" data-skill="css">CSS</span> (<span class="skill-tag" data-skill="sass">SASS</span>, <span class="skill-tag" data-skill="scss">SCSS</span>, <span class="skill-tag" data-skill="less">LESS</span>), <span class="skill-tag" data-skill="xhtml">XHTML</span>
     </p>
     <p>
-        <b>Frameworks</b> - React, Angular.js/Angular.io, Vue, Django, Laravel, CodeIgniter, Entity Framework, Backbone.js, PhoneGap, jQuery, jQuery Mobile, Jade, Zend Framework, Kohana, Scriptaculous, Mootools
+        <b>Frameworks</b> - <span class="skill-tag" data-skill="react">React</span>, <span class="skill-tag" data-skill="angular">Angular.js/Angular.io</span>, <span class="skill-tag" data-skill="vue">Vue</span>, <span class="skill-tag" data-skill="django">Django</span>, <span class="skill-tag" data-skill="laravel">Laravel</span>, <span class="skill-tag" data-skill="codeigniter">CodeIgniter</span>, <span class="skill-tag" data-skill="entityframework">Entity Framework</span>, <span class="skill-tag" data-skill="backbonejs">Backbone.js</span>, <span class="skill-tag" data-skill="phonegap">PhoneGap</span>, <span class="skill-tag" data-skill="jquery">jQuery</span>, <span class="skill-tag" data-skill="jquerymobile">jQuery Mobile</span>, <span class="skill-tag" data-skill="jade">Jade</span>, <span class="skill-tag" data-skill="zendframework">Zend Framework</span>, <span class="skill-tag" data-skill="kohana">Kohana</span>, <span class="skill-tag" data-skill="scriptaculous">Scriptaculous</span>, <span class="skill-tag" data-skill="mootools">Mootools</span>
     </p>
     <p>
-        <b>Paradigms</b> - API, MVC, Object Oriented Programming (OOP), Test Driven Development (TDD), Behavior Driven Development (BDD), AJAX, REST, Micro Services, SOAP, XML-RPC
+        <b>Paradigms</b> - <span class="skill-tag" data-skill="api">API</span>, <span class="skill-tag" data-skill="mvc">MVC</span>, <span class="skill-tag" data-skill="oop">Object Oriented Programming (OOP)</span>, <span class="skill-tag" data-skill="tdd">Test Driven Development (TDD)</span>, <span class="skill-tag" data-skill="bdd">Behavior Driven Development (BDD)</span>, <span class="skill-tag" data-skill="ajax">AJAX</span>, <span class="skill-tag" data-skill="rest">REST</span>, <span class="skill-tag" data-skill="microservices">Micro Services</span>, <span class="skill-tag" data-skill="soap">SOAP</span>, <span class="skill-tag" data-skill="xmlrpc">XML-RPC</span>
     </p>
     <p>
-        <b>Databases</b> - SQL (Postgres, MsSQL, MariaDb, MySQL), NoSQL (MongoDB, DynamoDB), Oracle, Snowflake, Vertica, DuckDB, Redshift
+        <b>Databases</b> - SQL (<span class="skill-tag" data-skill="postgres">Postgres</span>, <span class="skill-tag" data-skill="mssql">MsSQL</span>, <span class="skill-tag" data-skill="mariadb">MariaDb</span>, <span class="skill-tag" data-skill="mysql">MySQL</span>), NoSQL (<span class="skill-tag" data-skill="mongodb">MongoDB</span>, <span class="skill-tag" data-skill="dynamodb">DynamoDB</span>), <span class="skill-tag" data-skill="oracle">Oracle</span>, <span class="skill-tag" data-skill="snowflake">Snowflake</span>, <span class="skill-tag" data-skill="vertica">Vertica</span>, <span class="skill-tag" data-skill="duckdb">DuckDB</span>, <span class="skill-tag" data-skill="redshift">Redshift</span>
     </p>
     <p>
-        <b>Data storage Formats</b> - JSON, YAML, XML, HL7
+        <b>Data Storage Formats</b> - <span class="skill-tag" data-skill="json">JSON</span>, <span class="skill-tag" data-skill="yaml">YAML</span>, <span class="skill-tag" data-skill="xml">XML</span>, <span class="skill-tag" data-skill="hl7">HL7</span>
     </p>
     <p>
-        <b>Ticket/Project Management</b> - Jira, BitBucket, ZenDesk, Azure DevOps, Service Now, Redmine, Trello
+        <b>Ticket/Project Management</b> - <span class="skill-tag" data-skill="jira">Jira</span>, <span class="skill-tag" data-skill="bitbucket">BitBucket</span>, <span class="skill-tag" data-skill="zendesk">ZenDesk</span>, <span class="skill-tag" data-skill="azuredevops">Azure DevOps</span>, <span class="skill-tag" data-skill="servicenow">Service Now</span>, <span class="skill-tag" data-skill="redmine">Redmine</span>, <span class="skill-tag" data-skill="trello">Trello</span>
     </p>
     <p>
-        <b>Version Control</b> - GIT, GitHub, Tortoise SVN, CVS, Team Foundation Version Control (TFVC)
+        <b>Version Control</b> - <span class="skill-tag" data-skill="git">GIT</span>, <span class="skill-tag" data-skill="github">GitHub</span>, <span class="skill-tag" data-skill="svn">Tortoise SVN</span>, <span class="skill-tag" data-skill="cvs">CVS</span>, <span class="skill-tag" data-skill="tfvc">Team Foundation Version Control (TFVC)</span>
     </p>
     <p>
-        <b>Dev-Ops, Deployment and Environments</b> - Docker, Terraform, Kubernetes, Ansible, Apache, Nginx
+        <b>Dev-Ops, Deployment and Environments</b> - <span class="skill-tag" data-skill="docker">Docker</span>, <span class="skill-tag" data-skill="terraform">Terraform</span>, <span class="skill-tag" data-skill="kubernetes">Kubernetes</span>, <span class="skill-tag" data-skill="ansible">Ansible</span>, <span class="skill-tag" data-skill="apache">Apache</span>, <span class="skill-tag" data-skill="nginx">Nginx</span>
     </p>
     <p>
-        <b>ETL/ELT and Automation</b> - SQL Server Integration Services (SSIS), Microsoft Power Automate, SharePoint
+        <b>ETL/ELT and Automation</b> - <span class="skill-tag" data-skill="ssis">SQL Server Integration Services (SSIS)</span>, <span class="skill-tag" data-skill="powerautomate">Microsoft Power Automate</span>, <span class="skill-tag" data-skill="sharepoint">SharePoint</span>
     </p>
     <p>
-        <b>Testing</b> - Selenium, Appium, PHPUnit, JUnit
+        <b>Testing</b> - <span class="skill-tag" data-skill="selenium">Selenium</span>, <span class="skill-tag" data-skill="appium">Appium</span>, <span class="skill-tag" data-skill="phpunit">PHPUnit</span>, <span class="skill-tag" data-skill="junit">JUnit</span>
     </p>
     <p>
-        <b>Graphic Design</b> - Digital: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Flash Animation Pysical Mediums: Photographic Screen Printing, Awning Graphics, Hand Painted Lettering, Product Packaging Design 
+        <b>Graphic Design</b> - Digital: <span class="skill-tag" data-skill="adobecc">Adobe Creative Suite</span> (<span class="skill-tag" data-skill="photoshop">Photoshop</span>, <span class="skill-tag" data-skill="illustrator">Illustrator</span>, <span class="skill-tag" data-skill="indesign">InDesign</span>), <span class="skill-tag" data-skill="flash">Flash Animation</span> — Physical Mediums: <span class="skill-tag" data-skill="screenprinting">Photographic Screen Printing</span>, <span class="skill-tag" data-skill="awninggraphics">Awning Graphics</span>, <span class="skill-tag" data-skill="handpainted">Hand Painted Lettering</span>, <span class="skill-tag" data-skill="packagingdesign">Product Packaging Design</span>
     </p>
     <p>
-        <b>Drafting and 3-D Modelling</b> - Digital: Unigraphics, AutoCad, VersaCad; Drafting: Vellum, Scribecoat and Ink.  ISO-9001 Standards for Aircraft Manufacturing Industry
+        <b>Drafting and 3-D Modelling</b> - Digital: <span class="skill-tag" data-skill="unigraphics">Unigraphics</span>, <span class="skill-tag" data-skill="autocad">AutoCad</span>, <span class="skill-tag" data-skill="versacad">VersaCad</span>; Drafting: <span class="skill-tag" data-skill="vellum">Vellum</span>, <span class="skill-tag" data-skill="scribecoat">Scribecoat and Ink</span>. <span class="skill-tag" data-skill="iso9001">ISO-9001</span> Standards for Aircraft Manufacturing Industry
     </p>
     <p>
-        <b>AWS</b> - EC2, S3, Lambda, MSK
+        <b>AWS</b> - <span class="skill-tag" data-skill="ec2">EC2</span>, <span class="skill-tag" data-skill="s3">S3</span>, <span class="skill-tag" data-skill="lambda">Lambda</span>, <span class="skill-tag" data-skill="msk">MSK</span>
     </p>
     <p>
-        <b>Platforms</b> - Web Development, Mobile Application Development, Android, iPhone, LAMP Stack, Windows, Mac, Linux (Ubuntu, CentOS and Debian)
+        <b>Platforms</b> - <span class="skill-tag" data-skill="webdev">Web Development</span>, <span class="skill-tag" data-skill="mobiledev">Mobile Application Development</span>, <span class="skill-tag" data-skill="android">Android</span>, <span class="skill-tag" data-skill="iphone">iPhone</span>, <span class="skill-tag" data-skill="lamp">LAMP Stack</span>, <span class="skill-tag" data-skill="windows">Windows</span>, <span class="skill-tag" data-skill="mac">Mac</span>, <span class="skill-tag" data-skill="linux">Linux</span> (Ubuntu, CentOS and Debian)
     </p>
     <p>
-        <b>E-Commerce</b> - WordPress, OSCommerce, Magento
+        <b>E-Commerce</b> - <span class="skill-tag" data-skill="wordpress">WordPress</span>, <span class="skill-tag" data-skill="oscommerce">OSCommerce</span>, <span class="skill-tag" data-skill="magento">Magento</span>
     </p>
     <p>
-        <b>EDI Integration</b> - Sterling Commerce, True Commerce, Global Data Synchronization Network (GDSN), Walmart & Bestbuy EDI setup
+        <b>EDI Integration</b> - <span class="skill-tag" data-skill="sterlingcommerce">Sterling Commerce</span>, <span class="skill-tag" data-skill="truecommerce">True Commerce</span>, <span class="skill-tag" data-skill="gdsn">Global Data Synchronization Network (GDSN)</span>, <span class="skill-tag" data-skill="edi">Walmart &amp; Bestbuy EDI setup</span>
     </p>
     <p>
-        <b>Infrastructure</b> - Apache Kafka
+        <b>Infrastructure</b> - <span class="skill-tag" data-skill="kafka">Apache Kafka</span>
     </p>
     <p>
-        <b>Business</b> - Accounting, Entrepreneurship, Go-to-Market Strategy, New Business Development, MS Office Suite, Excel (Certified)
+        <b>Business</b> - <span class="skill-tag" data-skill="accounting">Accounting</span>, <span class="skill-tag" data-skill="entrepreneurship">Entrepreneurship</span>, <span class="skill-tag" data-skill="gtm">Go-to-Market Strategy</span>, <span class="skill-tag" data-skill="bizdev">New Business Development</span>, <span class="skill-tag" data-skill="msoffice">MS Office Suite</span>, <span class="skill-tag" data-skill="excel">Excel (Certified)</span>
     </p>
     <p>
-        <b>Desktop Publishing</b> - QuarkXpress, Kindle Direct Publishing
+        <b>Desktop Publishing</b> - <span class="skill-tag" data-skill="quarkxpress">QuarkXpress</span>, <span class="skill-tag" data-skill="kindle">Kindle Direct Publishing</span>
     </p>
 </section>
 
@@ -215,8 +283,174 @@
 </section>
 
 <footer>
-    <p>© 2026 Dallas Caley. All rights reserved.</p>
+    <p>&copy; 2026 Dallas Caley. All rights reserved.</p>
 </footer>
+
+<div class="modal-overlay" id="skill-modal-overlay">
+    <div class="modal-box">
+        <button class="modal-close" id="skill-modal-close" aria-label="Close">&#x2715;</button>
+        <h3 class="modal-title" id="skill-modal-title"></h3>
+        <p class="modal-body" id="skill-modal-body"></p>
+    </div>
+</div>
+
+<script>
+var skillData = {
+    javascript:      { title: 'JavaScript',      desc: '15-20 years of JavaScript experience across almost every role. Worked with raw JS as well as virtually every major framework. Deep knowledge of ES6+, async/await, closures, the event loop, and modern tooling.' },
+    nodejs:          { title: 'Node.js',          desc: '10+ years building backends, REST APIs, real-time Socket.IO servers, and CLI tools with Node.js. Comfortable with streams, the event loop, Express, and the broader npm ecosystem.' },
+    typescript:      { title: 'TypeScript',       desc: 'Used TypeScript extensively on both frontend and backend projects. Appreciate the type safety and tooling benefits it brings to larger codebases.' },
+    python:          { title: 'Python',           desc: 'Worked with Python for data scripts, automation, backend APIs (Django), and data pipeline work. Comfortable with the standard library and popular packages like pandas, requests, and SQLAlchemy.' },
+    csharp:          { title: 'C#.NET',           desc: 'Several years of C# .NET development including ASP.NET MVC, Web API, Entity Framework, and Windows Forms applications. Comfortable with both .NET Framework and .NET Core/5+.' },
+    powershell:      { title: 'PowerShell',       desc: 'Used PowerShell extensively for system administration, deployment automation, and scripting in Windows environments. Built pipelines, scheduled tasks, and infrastructure tooling.' },
+    php:             { title: 'PHP',              desc: '10+ years of PHP development spanning raw PHP, Laravel, CodeIgniter, Zend Framework, and Kohana. Built CMS systems, e-commerce platforms, and custom web applications.' },
+    kotlin:          { title: 'Kotlin',           desc: 'Native Android development using Kotlin with Jetpack Compose, Retrofit, and modern Android architecture patterns. Currently my active mobile development language.' },
+    swift:           { title: 'Swift',            desc: 'Developed iOS applications using Swift including UIKit and SwiftUI. Experience with Xcode, App Store deployment, and Apple development tooling.' },
+    html1:           { title: 'HTML-1 (Email)',   desc: 'Built HTML email templates compatible with major email clients, working within the constraints of table-based layouts and inline styles required for consistent email rendering.' },
+    html5:           { title: 'HTML-5',           desc: 'Extensive experience with semantic HTML5 across countless web projects. Comfortable with accessibility (ARIA), canvas, native browser APIs, and standards-compliant markup.' },
+    css:             { title: 'CSS',              desc: 'Deep, long-term expertise in CSS including Flexbox, Grid, animations, responsive design, specificity, and cross-browser compatibility. Used across everything from landing pages to large enterprise apps.' },
+    sass:            { title: 'SASS',             desc: 'Used SASS as a CSS preprocessor for years, leveraging variables, mixins, nesting, functions, and partials to write maintainable stylesheets at scale.' },
+    scss:            { title: 'SCSS',             desc: 'SCSS is my preferred CSS preprocessor syntax. Used it extensively in Vue, React, and Angular projects to scale stylesheets with variables, mixins, and component-scoped styles.' },
+    less:            { title: 'LESS',             desc: 'Worked with LESS in earlier frontend projects, particularly for Bootstrap customization and in AngularJS-era frontend development.' },
+    xhtml:           { title: 'XHTML',            desc: 'Worked with XHTML during the transitional period of web standards, writing well-formed, valid markup with strict doctype compliance and XML-compatible syntax.' },
+    react:           { title: 'React',            desc: 'Built production React applications using hooks, context, Redux, and modern functional patterns. Experience with CRA, Vite, and Next.js setups across various project types.' },
+    angular:         { title: 'Angular.js / Angular.io', desc: 'Worked with both AngularJS (1.x) and modern Angular (2+). Built enterprise-scale applications with TypeScript, RxJS, services, dependency injection, and component architecture.' },
+    vue:             { title: 'Vue',              desc: 'Primary frontend framework for my most recent work. Deep expertise in Vue 3 with Composition API, Pinia, Vue Router, and Vite. Built large-scale SPAs with real-time Socket.IO features.' },
+    django:          { title: 'Django',           desc: 'Built backend web applications with Django including the ORM, admin interface, Django REST Framework, and built-in authentication system.' },
+    laravel:         { title: 'Laravel',          desc: 'Multiple years of Laravel development building REST APIs, full-stack web apps, and Eloquent-driven backends. Comfortable with Artisan, queues, and the full Laravel ecosystem.' },
+    codeigniter:     { title: 'CodeIgniter',      desc: 'Primary PHP framework during my mid-career years. Built numerous web applications on CodeIgniter before migrating to more modern frameworks like Laravel.' },
+    entityframework: { title: 'Entity Framework', desc: 'Used Entity Framework and EF Core for .NET data access in multiple projects, including code-first migrations, LINQ queries, and complex relationship mapping.' },
+    backbonejs:      { title: 'Backbone.js',      desc: 'Used Backbone.js during the early JavaScript MVC era to build organized front-end apps before React and Angular became dominant.' },
+    phonegap:        { title: 'PhoneGap',         desc: 'Built cross-platform mobile applications with PhoneGap/Cordova, targeting both iOS and Android from a single HTML/CSS/JavaScript codebase.' },
+    jquery:          { title: 'jQuery',           desc: 'Extensive jQuery experience from the peak of its popularity. Used for DOM manipulation, AJAX, animations, and plugin development across many web projects.' },
+    jquerymobile:    { title: 'jQuery Mobile',    desc: 'Built mobile-optimized web applications with jQuery Mobile for early touchscreen experiences before native mobile development became the norm.' },
+    jade:            { title: 'Jade (Pug)',        desc: 'Used Jade (now Pug) as an HTML template engine in Node.js/Express stacks for server-side rendered views.' },
+    zendframework:   { title: 'Zend Framework',   desc: 'Built enterprise PHP applications with Zend Framework 1 and 2, using its MVC architecture, component library, and database adapters for large-scale projects.' },
+    kohana:          { title: 'Kohana',           desc: 'Used Kohana as a lightweight PHP framework alternative before transitioning fully to Laravel.' },
+    scriptaculous:   { title: 'Scriptaculous',    desc: 'Used Scriptaculous (built on Prototype.js) for rich UI effects, drag-and-drop, and animations in the pre-jQuery era of web development.' },
+    mootools:        { title: 'Mootools',         desc: 'Worked with MooTools as a JavaScript framework alternative during the early browser-wars era, before jQuery standardized the ecosystem.' },
+    api:             { title: 'API Development',  desc: 'Extensive experience designing, building, and consuming APIs across dozens of projects in multiple languages. Deep knowledge of API design patterns, versioning, authentication, and documentation.' },
+    mvc:             { title: 'MVC',              desc: 'Applied Model-View-Controller architecture throughout my career across ASP.NET MVC, Laravel, CodeIgniter, Angular, Vue, and more. Second nature at this point.' },
+    oop:             { title: 'Object Oriented Programming (OOP)', desc: 'Deep, long-term experience applying OOP principles across multiple languages. Comfortable with inheritance, encapsulation, polymorphism, design patterns, and SOLID principles.' },
+    tdd:             { title: 'Test Driven Development (TDD)', desc: 'Applied TDD on multiple projects, writing tests before implementation to drive design decisions and ensure correctness from the start.' },
+    bdd:             { title: 'Behavior Driven Development (BDD)', desc: 'Used BDD frameworks and methodology to align development with business requirements through executable specifications and human-readable test scenarios.' },
+    ajax:            { title: 'AJAX',             desc: 'Used AJAX throughout my career from early XMLHttpRequest implementations through jQuery.ajax() to modern fetch() and Axios for asynchronous data loading.' },
+    rest:            { title: 'REST',             desc: 'Designed and consumed RESTful APIs throughout my career. Deep familiarity with HTTP verbs, status codes, resource modeling, JWT/OAuth auth, and API design best practices.' },
+    microservices:   { title: 'Micro Services',   desc: 'Worked in microservice architectures, breaking monolithic applications into independently deployable services communicating via REST and message brokers like Kafka.' },
+    soap:            { title: 'SOAP',             desc: 'Integrated with SOAP web services in enterprise healthcare and e-commerce environments, including WSDL parsing, envelope construction, and fault handling.' },
+    xmlrpc:          { title: 'XML-RPC',          desc: 'Used XML-RPC for integrations with legacy systems and CMS platforms including WordPress and older enterprise systems that predate REST APIs.' },
+    postgres:        { title: 'PostgreSQL',       desc: 'Used PostgreSQL in production applications, leveraging its advanced features, native JSON support, full-text search, and strong ACID compliance.' },
+    mssql:           { title: 'Microsoft SQL Server', desc: 'Multiple years working with MS SQL Server in enterprise applications including stored procedures, SSMS tooling, indexing strategies, and SSIS integration.' },
+    mariadb:         { title: 'MariaDB',          desc: 'Current primary database for production applications. Deep familiarity with schema design, indexing, query optimization, and MariaDB-specific features.' },
+    mysql:           { title: 'MySQL',            desc: 'Extensive MySQL experience as the backbone of countless LAMP stack and web applications over many years. Comfortable with schema design, stored procedures, and performance tuning.' },
+    mongodb:         { title: 'MongoDB',          desc: 'Used MongoDB for document-oriented data storage in Node.js applications. Familiar with aggregation pipelines, indexing strategies, and document schema design.' },
+    dynamodb:        { title: 'DynamoDB',         desc: 'Used DynamoDB in AWS Lambda-based serverless architectures for scalable, low-latency NoSQL storage with on-demand capacity.' },
+    oracle:          { title: 'Oracle',           desc: 'Worked with Oracle databases in enterprise environments including PL/SQL development, query optimization, and Oracle-specific tooling.' },
+    snowflake:       { title: 'Snowflake',        desc: 'Used Snowflake as a cloud data warehouse for analytical workloads, ETL/ELT pipelines, and BI reporting in AWS-hosted environments.' },
+    vertica:         { title: 'Vertica',          desc: 'Worked with Vertica as a high-performance columnar analytical database for large-scale data warehousing and business intelligence applications.' },
+    duckdb:          { title: 'DuckDB',           desc: 'Used DuckDB for in-process analytical queries and lightweight data exploration pipelines. A great tool for fast local analytics without a server.' },
+    redshift:        { title: 'Amazon Redshift',  desc: 'Used Amazon Redshift for cloud-based data warehousing and BI reporting pipelines in AWS environments.' },
+    json:            { title: 'JSON',             desc: 'Used JSON as a primary data exchange format throughout my career across APIs, config files, databases, and messaging systems. Deep familiarity with parsing, serialization, and JSON Schema.' },
+    yaml:            { title: 'YAML',             desc: 'Used YAML extensively for configuration files including Docker Compose, Kubernetes manifests, CI/CD pipelines, Ansible playbooks, and application settings.' },
+    xml:             { title: 'XML',              desc: 'Worked with XML for data exchange, configuration, and legacy system integrations including SOAP, EDI, HL7, and RSS/Atom feeds.' },
+    hl7:             { title: 'HL7',              desc: 'Worked with HL7 healthcare data standards for medical system integrations and health information exchange between clinical applications.' },
+    jira:            { title: 'Jira',             desc: 'Used Jira extensively for project management and issue tracking across multiple teams. Familiar with Scrum boards, backlogs, sprint planning, epics, and JQL.' },
+    bitbucket:       { title: 'BitBucket',        desc: 'Used Bitbucket for source control, pull request workflows, and CI/CD pipelines as part of the Atlassian ecosystem alongside Jira.' },
+    zendesk:         { title: 'ZenDesk',          desc: 'Managed and customized Zendesk for customer support workflows, including ticket routing, macros, triggers, and backend API integration.' },
+    azuredevops:     { title: 'Azure DevOps',     desc: 'Used Azure DevOps for project management, CI/CD pipeline configuration, and source control in Microsoft-centric development environments.' },
+    servicenow:      { title: 'Service Now',      desc: 'Worked with ServiceNow for IT service management, change management, and workflow automation in large enterprise environments.' },
+    redmine:         { title: 'Redmine',          desc: 'Used Redmine as an open-source project management and issue tracking tool for smaller teams needing a self-hosted solution.' },
+    trello:          { title: 'Trello',           desc: 'Used Trello for lightweight project and task management with Kanban-style boards, particularly useful for early-stage projects and small teams.' },
+    git:             { title: 'Git',              desc: 'Git is a daily tool used for many years. Comfortable with branching strategies, rebasing, cherry-picking, merge conflict resolution, hooks, and team Git workflows.' },
+    github:          { title: 'GitHub',           desc: 'Extensive GitHub usage for personal and professional projects including pull requests, GitHub Actions CI/CD, code reviews, branch protection, and project management.' },
+    svn:             { title: 'Tortoise SVN',     desc: 'Used Subversion (SVN) with the TortoiseSVN client in enterprise Windows environments before migrating teams to Git-based workflows.' },
+    cvs:             { title: 'CVS',              desc: 'Used CVS (Concurrent Versions System) in early-career software development environments before SVN and Git became standard.' },
+    tfvc:            { title: 'Team Foundation Version Control (TFVC)', desc: 'Used TFVC for source control in Microsoft/.NET enterprise environments, integrated with Visual Studio and Team Foundation Server.' },
+    docker:          { title: 'Docker',           desc: 'Used Docker extensively for containerizing applications, building local development environments, and production deployments on AWS EC2. Experience with multi-container setups via Docker Compose.' },
+    terraform:       { title: 'Terraform',        desc: 'Used Terraform to provision and manage AWS infrastructure as code, including EC2 instances, VPCs, security groups, and IAM roles.' },
+    kubernetes:      { title: 'Kubernetes',       desc: 'Worked with Kubernetes for container orchestration, deploying microservices, managing cluster resources, and configuring ingress controllers and persistent volumes.' },
+    ansible:         { title: 'Ansible',          desc: 'Used Ansible for configuration management and deployment automation on EC2 servers, writing playbooks to provision and configure Linux environments repeatably.' },
+    apache:          { title: 'Apache',           desc: 'Configured and managed Apache HTTP Server for hosting web applications, virtual hosts, SSL termination, mod_rewrite rules, and reverse proxying.' },
+    nginx:           { title: 'Nginx',            desc: 'Used Nginx as a reverse proxy, SSL terminator, and static file server in production environments. Current choice for all production web hosting.' },
+    ssis:            { title: 'SQL Server Integration Services (SSIS)', desc: 'Built ETL pipelines with SSIS for data migration, transformation, and loading into data warehouses in enterprise SQL Server environments.' },
+    powerautomate:   { title: 'Microsoft Power Automate', desc: 'Used Power Automate to build workflow automation for business processes, SharePoint integrations, email triggers, and cross-system data sync in Microsoft 365 environments.' },
+    sharepoint:      { title: 'SharePoint',       desc: 'Worked with SharePoint for document management, intranet portal development, and business process automation in Microsoft enterprise environments.' },
+    selenium:        { title: 'Selenium',         desc: 'Used Selenium WebDriver for browser-based automated testing of web applications, running test suites across multiple browsers in CI/CD pipelines.' },
+    appium:          { title: 'Appium',           desc: 'Used Appium for mobile E2E test automation on Android devices, integrated with WebdriverIO and running against real device and emulator targets.' },
+    phpunit:         { title: 'PHPUnit',          desc: 'Wrote unit and integration tests with PHPUnit in Laravel and plain PHP projects, covering business logic, models, and API endpoint behavior.' },
+    junit:           { title: 'JUnit',            desc: 'Wrote unit tests with JUnit in Java and Android Kotlin projects, used for both business logic testing and instrumented Android tests.' },
+    adobecc:         { title: 'Adobe Creative Suite', desc: 'Extensive experience with the full Adobe Creative Suite for digital design work including web graphics, UI mockups, marketing materials, and print production files.' },
+    photoshop:       { title: 'Photoshop',        desc: 'Used Photoshop for web graphics, photo editing, UI mockups, digital artwork, and print-ready image production throughout my career.' },
+    illustrator:     { title: 'Illustrator',      desc: 'Used Illustrator for vector graphics, logo design, icon sets, and production-ready print artwork. Comfortable with the full Bezier toolset and artboard workflows.' },
+    indesign:        { title: 'InDesign',         desc: 'Used InDesign for professional print layout work including brochures, marketing collateral, and multi-page publication design.' },
+    flash:           { title: 'Flash Animation',  desc: 'Created Flash animations and interactive web content in the pre-HTML5 era, including animated banners, interactive menus, and motion graphics for web use.' },
+    screenprinting:  { title: 'Photographic Screen Printing', desc: 'Hands-on experience with the full photographic screen printing process for apparel and promotional products, from film output to emulsion and multi-color print runs.' },
+    awninggraphics:  { title: 'Awning Graphics',  desc: 'Designed and produced large-format awning graphics for commercial signage, including layout for non-flat curved surfaces and color management for outdoor materials.' },
+    handpainted:     { title: 'Hand Painted Lettering', desc: 'Created hand-painted lettering and custom signage — a craft skill from an earlier chapter of my career that sharpened my eye for typography and proportion.' },
+    packagingdesign: { title: 'Product Packaging Design', desc: 'Designed retail product packaging from concept through print-ready production, including die-line templates, retail shelf positioning, and print spec coordination.' },
+    unigraphics:     { title: 'Unigraphics (NX)', desc: 'Used Unigraphics (NX) for 3D CAD modeling and technical drafting in the aircraft manufacturing industry, working to ISO-9001 quality standards.' },
+    autocad:         { title: 'AutoCad',          desc: 'Used AutoCAD for 2D technical drafting and design work, including engineering drawings and layout documentation.' },
+    versacad:        { title: 'VersaCad',         desc: 'Used VersaCAD as one of my first CAD drafting tools before migrating to more modern AutoCAD-based workflows.' },
+    vellum:          { title: 'Vellum',           desc: 'Drafted technical drawings by hand on vellum drafting film using traditional techniques — a foundational skill from working in the aircraft manufacturing industry.' },
+    scribecoat:      { title: 'Scribecoat and Ink', desc: 'Used scribing and ink techniques for precision technical illustration on Scribecoat film, a specialized medium used in aerospace and engineering documentation.' },
+    iso9001:         { title: 'ISO-9001',         desc: 'Familiar with ISO-9001 quality management standards from working in the aircraft manufacturing industry, including documentation control, process auditing, and quality assurance procedures.' },
+    ec2:             { title: 'AWS EC2',           desc: 'Provisioned and managed EC2 instances for production application hosting, including instance sizing, AMI management, security groups, SSH access, and automated Docker-based deployments.' },
+    s3:              { title: 'AWS S3',            desc: 'Used S3 for file storage, static website hosting, media uploads, and data archiving in production AWS environments. Comfortable with bucket policies, IAM permissions, and lifecycle rules.' },
+    lambda:          { title: 'AWS Lambda',        desc: 'Built serverless functions with AWS Lambda for event-driven processing, API backend endpoints, and scheduled batch tasks integrated with other AWS services.' },
+    msk:             { title: 'AWS MSK',           desc: 'Used Amazon MSK (Managed Streaming for Apache Kafka) for real-time data streaming pipelines, managing topics, consumer groups, and producer configuration in a managed Kafka cluster.' },
+    webdev:          { title: 'Web Development',  desc: '20+ years of professional web development spanning the full stack — from early HTML/PHP/MySQL sites to modern Vue/Node/MariaDB architectures and real-time applications.' },
+    mobiledev:       { title: 'Mobile Application Development', desc: 'Built native and cross-platform mobile applications across multiple projects, including Android (Kotlin), iOS (Swift), and hybrid approaches (PhoneGap/Cordova).' },
+    android:         { title: 'Android',          desc: 'Native Android development using Kotlin, Jetpack Compose, Retrofit, and modern Android architecture patterns. Currently actively developing and maintaining an Android app.' },
+    iphone:          { title: 'iPhone (iOS)',      desc: 'iOS application development using Swift, targeting iPhone and iPad. Experience with Xcode, UIKit, and the App Store submission process.' },
+    lamp:            { title: 'LAMP Stack',        desc: 'Deep, long-term experience with the LAMP stack (Linux, Apache, MySQL, PHP) as the foundation of a large portion of my early and mid-career web development work.' },
+    windows:         { title: 'Windows',          desc: 'Extensive Windows experience as both a development environment and a platform target, including Windows Server administration, IIS, and .NET Windows application development.' },
+    mac:             { title: 'Mac',              desc: 'Comfortable with macOS as a primary development environment for web, mobile, and general software development projects.' },
+    linux:           { title: 'Linux',            desc: 'Administered and developed on Linux servers (Ubuntu, CentOS, Debian) for production deployments and local dev environments. Comfortable with the shell, systemd, and server configuration.' },
+    wordpress:       { title: 'WordPress',        desc: 'Built, customized, and deployed WordPress sites including custom theme development, plugin development and customization, and WooCommerce e-commerce implementations.' },
+    oscommerce:      { title: 'OSCommerce',       desc: 'Built and customized e-commerce sites on OSCommerce in the early days of online retail before more modern platforms dominated the market.' },
+    magento:         { title: 'Magento',          desc: 'Deployed and customized Magento for e-commerce clients, including theme development, module customization, and integration with payment and shipping systems.' },
+    sterlingcommerce:{ title: 'Sterling Commerce', desc: 'Integrated with Sterling Commerce (now IBM Sterling) for enterprise-level EDI and supply chain data exchange in retail and logistics contexts.' },
+    truecommerce:    { title: 'True Commerce',    desc: 'Used True Commerce for EDI trading partner setup, transaction management, and compliance testing with major retail partners.' },
+    gdsn:            { title: 'Global Data Synchronization Network (GDSN)', desc: 'Worked with the GDSN for product data synchronization with major retailers, ensuring compliant product information exchange through certified data pools.' },
+    edi:             { title: 'Walmart & Best Buy EDI', desc: 'Set up and maintained EDI connections with both Walmart and Best Buy for purchase order processing, ASN transmission, invoice exchange, and compliance management.' },
+    kafka:           { title: 'Apache Kafka',     desc: 'Used Apache Kafka for high-throughput real-time event streaming, building producer/consumer pipelines in production environments for decoupled, fault-tolerant data processing.' },
+    accounting:      { title: 'Accounting',       desc: 'Business accounting knowledge from running companies, covering P&L statements, accounts payable/receivable, payroll, invoicing, and financial reporting.' },
+    entrepreneurship:{ title: 'Entrepreneurship', desc: 'Founded and co-founded multiple companies, navigating every stage from initial concept through incorporation, operations, hiring, and scaling. This is not just a skill — it is a lifestyle.' },
+    gtm:             { title: 'Go-to-Market Strategy', desc: 'Developed and executed go-to-market strategies for software products, blending technical knowledge with business development to identify markets, craft messaging, and drive adoption.' },
+    bizdev:          { title: 'New Business Development', desc: 'Led new business development efforts across technology services, including prospecting, proposal writing, pitching, and closing deals at the intersection of sales and technology.' },
+    msoffice:        { title: 'MS Office Suite',  desc: 'Expert-level Microsoft Office usage including Excel, Word, PowerPoint, Outlook, and Teams for both internal operations and client-facing deliverables.' },
+    excel:           { title: 'Excel (Certified)', desc: 'Excel-certified with advanced skills including pivot tables, VLOOKUP/XLOOKUP, Power Query, macros (VBA), conditional formatting, and complex multi-sheet financial models.' },
+    quarkxpress:     { title: 'QuarkXpress',      desc: 'Used QuarkXpress for professional desktop publishing and print layout, particularly for magazines, catalogs, and high-volume print production work.' },
+    kindle:          { title: 'Kindle Direct Publishing', desc: 'Published content through Kindle Direct Publishing (KDP) for e-book distribution, including formatting for Kindle format requirements and managing the KDP publishing workflow.' }
+};
+
+var overlay   = document.getElementById('skill-modal-overlay');
+var modalTitle = document.getElementById('skill-modal-title');
+var modalBody  = document.getElementById('skill-modal-body');
+var modalClose = document.getElementById('skill-modal-close');
+
+document.querySelectorAll('.skill-tag').forEach(function(el) {
+    el.addEventListener('click', function() {
+        var data = skillData[el.dataset.skill];
+        if (data) {
+            modalTitle.textContent = data.title;
+            modalBody.textContent  = data.desc;
+            overlay.classList.add('active');
+        }
+    });
+});
+
+overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) overlay.classList.remove('active');
+});
+
+modalClose.addEventListener('click', function() {
+    overlay.classList.remove('active');
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') overlay.classList.remove('active');
+});
+</script>
 
 </body>
 </html>
