@@ -1,2 +1,3 @@
-wp-config*db-backup/
+wp-config*
+db-backup/
 *.sql
