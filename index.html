@@ -83,6 +83,27 @@
             background: #0ea5e9;
         }
 
+        .job {
+            margin-bottom: 16px;
+        }
+
+        .job h3 {
+            margin: 0 0 4px 0;
+            color: #e2e8f0;
+        }
+
+        .job-meta {
+            color: #94a3b8;
+            font-size: 0.9em;
+            margin: 0 0 10px 0;
+        }
+
+        .job ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
         .skill-tag {
             cursor: pointer;
             color: #7dd3fc;
@@ -162,6 +183,7 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#work-history">Work History</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -289,6 +311,127 @@
     <p>
         <b>Associate Degree</b> - Science - 1996
     </p>
+</section>
+
+<section id="work-history">
+    <h2>Work History</h2>
+
+    <div class="card job">
+        <h3>Board Member / Director</h3>
+        <p class="job-meta">Windward Village by Pacific Estates &middot; Sep 2026 &ndash; Present &middot; Long Beach, CA</p>
+        <ul>
+            <li>Elected member of the Board of Directors for a 304-unit residential community.</li>
+            <li>Participate in governance, financial oversight, budgeting, vendor management, and long-term planning.</li>
+            <li>Review and approve expenditures, contracts, policies, and capital improvement initiatives, working with fellow directors, property management, residents, and contractors.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Senior Software Engineer / Technical Lead</h3>
+        <p class="job-meta">Advantage Solutions &middot; Nov 2020 &ndash; Present &middot; Remote</p>
+        <p>A Fortune 1000 company providing marketing services to the retail industry, including major grocery and retail chains such as Costco and Walmart, backed by a large mobile, desktop, web and cloud application infrastructure.</p>
+        <ul>
+            <li>Currently working on enterprise orchestration projects centered around Run My Jobs, Databricks (jobs and notebooks), Coralogix, SSIS, and our own custom Blazor/PowerShell integration layer. The Blazor work is being built agentically with Claude Code.</li>
+            <li>PowerShell is our main language; we built an extensive custom framework for validating ETL pipelines across many connected tools.</li>
+            <li>Previously worked on Azure DevOps CI/CD pipelines and &ldquo;Big Data&rdquo; ETL maintenance with Snowflake, Vertica, Redshift and DuckDB, plus C#.NET with Entity Framework and LINQ.</li>
+            <li>Led teams on the Okta SSO and multi-factor authentication integration, a French language translation project, a PowerPoint Slide Builder application, and SOX / SOC 2 compliance projects.</li>
+            <li>Currently leading offshore development teams.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Co-Founder / Entrepreneur / Agentic Engineer</h3>
+        <p class="job-meta">Cherry Blossom Development &middot; May 2021 &ndash; Sep 2026 &middot; Spokane, WA (Remote)</p>
+        <p>An LLC founded by me and three former colleagues, working only on internal projects and products.</p>
+        <ul>
+            <li>Prosaurus: a social media and personal productivity platform live on the web, Android and iPhone, with zero marketing, zero AI-generated slop, and no invasive algorithm. The apps are built primarily with Claude Code under my direction; I set up the Kubernetes, Ansible and Terraform infrastructure by hand.</li>
+            <li>Also building an AI prompt improvement and orchestration tool, and a WordPress-based automated website scrubber to remove malicious code and data.</li>
+            <li>Former projects: a low-latency live music collaboration service, an Ethereum crypto mining operation, a digital-display-embedded drinking cup with marketing capabilities, and product maintenance of an Electronic Health Records (EHR) application.</li>
+            <li>Wrote and published a book on Amazon, <i>Minimum Viable Programmer</i>, and took part in the Profitable Python Podcast with Ben McNeill.</li>
+            <li>Handled all of the legal work to form the company, as well as its accounting and tax reporting.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Senior Software Engineer</h3>
+        <p class="job-meta">Emotive &middot; May 2019 &ndash; Nov 2020 &middot; Los Angeles, CA</p>
+        <p>A mobile messaging platform that scales 1-to-1 customer relationships using a combination of AI and human natural language classification to increase sales conversion rates.</p>
+        <ul>
+            <li>Built version 2 of the messaging platform using React and Python/Django, allowing an exponential increase in message throughput.</li>
+            <li>Built the training system our team in the Philippines used to train our chat bots with IBM Watson Language Classification; the platform grew to deliver hundreds of millions of automated chat messages daily.</li>
+            <li>Implemented Apache Kafka, AWS MSK, Avro schemas, Confluent Schema Registry and Django Channels to create an event-driven micro-services layer, alongside AWS Lambda, DynamoDB, Redis, PostgreSQL, Docker and Terraform.</li>
+            <li>As employee #9, worked with every member of the founding team to help grow the company to over 60 people, and played a key role in hiring core developers and a new CTO.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Software Development Project Manager</h3>
+        <p class="job-meta">UpdatePromise &middot; Dec 2017 &ndash; May 2019 &middot; Chino, CA</p>
+        <p>A suite of web and mobile tools connecting automotive dealerships more directly to customers about vehicle service.</p>
+        <ul>
+            <li>Led a team of over 20 software developers, QA and network administrators, delivering integrations with insurance companies and major automotive names such as Toyota.</li>
+            <li>Facilitated the integration of Python and PHP code using Apache Thrift RPC calls, writing example code, helping debug issues, and coordinating with the mobile development team.</li>
+            <li>Created the first Angular.io front end, embedded seamlessly into the existing application, and helped migrate it through Angular version 5.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Lead Software Engineer</h3>
+        <p class="job-meta">Buy It Installed &middot; Feb 2016 &ndash; Dec 2017 &middot; Irvine, CA</p>
+        <p>A conversion tool integrated into retailers&rsquo; e-commerce sites, letting consumers buy products with manufacturer-certified installation at the click of a button.</p>
+        <ul>
+            <li>Created the company&rsquo;s very first mobile app (Android and iPhone) using PhoneGap, Backbone.js and jQuery Mobile, letting contractors across the nation register and receive contract work.</li>
+            <li>Created a digital asset management system on Amazon S3 for our 4th generation visual programming language platform.</li>
+            <li>Built a Laravel API serving both the mobile and web applications, reducing the need for home-grown API solutions.</li>
+            <li>Directly managed one developer and led a team of up to 4, setting up local environments and onboarding developers.</li>
+            <li>Maintained git repositories on BitBucket, managed tickets in Jira, and set up Jenkins for automated builds.</li>
+            <li>Created wireframes for, and oversaw an overseas team building, an AI chat bot using IBM Watson.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Software Developer III</h3>
+        <p class="job-meta">TwinMed, LLC &middot; Aug 2014 &ndash; Feb 2016 &middot; Santa Fe Springs, CA</p>
+        <p>One of the nation&rsquo;s top 3 suppliers of nursing home and medical products.</p>
+        <ul>
+            <li>Developed and rolled out a system encouraging the purchase of alternate products, leading to shorter delivery times, less work for customer service, and more profitability.</li>
+            <li>Added functionality to both our PHP/LAMP stack and MEAN stack (MongoDB, Express, Angular, Node.js) applications to streamline internal product purchasing.</li>
+            <li>Created and maintained EDI systems and customer service portals connecting our retail application to our Microsoft Great Plains ERP backend.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Software Development Manager</h3>
+        <p class="job-meta">SkyCare &middot; Mar 2013 &ndash; Aug 2014 &middot; Santa Ana, CA</p>
+        <p>A fully integrated Electronic Health Records (EHR) and billing application used by about 500 small and mid-size medical practices.</p>
+        <ul>
+            <li>Built a new Surescripts prescription-routing integration using PHP/CodeIgniter, so practitioners could electronically create and update prescriptions for all of their patients.</li>
+            <li>Led a team of 12 developers through the Medicare/Medicaid EHR Meaningful Use Stage 2 (MU2) certification: 40 modules, each live-tested by a government-certified proctor.</li>
+            <li>Worked with HL7 and SOAP integrations, and moved the team from SVN to Git-based workflows.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>PHP Developer II</h3>
+        <p class="job-meta">HauteLook (a Nordstrom company) &middot; May 2011 &ndash; Feb 2013 &middot; Los Angeles, CA</p>
+        <p>A flash-sales e-commerce retailer focused on higher-end fashion, acquired by Nordstrom during my time there.</p>
+        <ul>
+            <li>Created a new returns processing system used by hundreds of employees and millions of customers.</li>
+            <li>Introduced Test Driven Development and unit testing with PHPUnit into our Zend Framework based infrastructure, enabling quicker identification of bugs.</li>
+            <li>Integrated PayPal&rsquo;s Bill Me Later service and 3-Delta into the payment architecture, and implemented new shipping methods including USPS, Newgistics and OnTrac.</li>
+            <li>Added a dynamic product sorting tool for daily or even hourly merchandising changes, and an RSS-based &ldquo;Deal of the Day&rdquo; feed for third-party marketing.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Application Developer / Tech Lead</h3>
+        <p class="job-meta">After 10 Studios &middot; Aug 2009 &ndash; May 2011 &middot; Santa Monica, CA (Contract)</p>
+        <p>A software design agency creating web and mobile applications, as well as physical hardware, for over 60 companies.</p>
+        <ul>
+            <li>Created the bulk of the front end (using jQuery) for the Viper Smart Start vehicle tracking application, a GPS-enabled device deployed to the Hertz rental car fleet and sold at stores such as Best Buy.</li>
+            <li>Managed overseas teams and wrote code for about half a dozen new applications, including social media and mobile gaming apps.</li>
+        </ul>
+    </div>
 </section>
 
 <section id="contact">
