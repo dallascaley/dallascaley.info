@@ -98,6 +98,32 @@
             margin: 0 0 10px 0;
         }
 
+        .job-meta:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid #38bdf8;
+            margin: 30px 0 0 0;
+            width: 100%;
+        }
+
+        /* Everything after Relevant Work History sits on a background that
+           lightens toward the bottom of the page. */
+        .fade {
+            background: linear-gradient(to bottom, #0f172a 0%, #475569 100%);
+            padding-bottom: 20px;
+        }
+
+        .fade .card {
+            box-shadow: 0 4px 12px rgba(2, 6, 23, 0.35);
+        }
+
+        #contact a:not(.btn) {
+            color: #7dd3fc;
+        }
+
         .job ul {
             margin: 8px 0 0 0;
             padding-left: 20px;
@@ -313,8 +339,10 @@
     </p>
 </section>
 
+<hr class="section-divider">
+
 <section id="work-history">
-    <h2>Work History</h2>
+    <h2>Relevant Work History</h2>
 
     <div class="card job">
         <h3>Board Member / Director</h3>
@@ -349,6 +377,15 @@
             <li>Former projects: a low-latency live music collaboration service, an Ethereum crypto mining operation, a digital-display-embedded drinking cup with marketing capabilities, and product maintenance of an Electronic Health Records (EHR) application.</li>
             <li>Wrote and published a book on Amazon, <i>Minimum Viable Programmer</i>, and took part in the Profitable Python Podcast with Ben McNeill.</li>
             <li>Handled all of the legal work to form the company, as well as its accounting and tax reporting.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Author / Writer</h3>
+        <p class="job-meta">Self-employed &middot; 2020 &ndash; Present</p>
+        <ul>
+            <li>Wrote and published a book, <i>Minimum Viable Programmer</i>, available on Amazon.</li>
+            <li>Paid contributor for Quora.</li>
         </ul>
     </div>
 
@@ -435,7 +472,7 @@
 
     <div class="card job">
         <h3>Web Master</h3>
-        <p class="job-meta">Shaxon &middot; Jan 2008 &ndash; Aug 2009</p>
+        <p class="job-meta">Shaxon Industries &middot; Jan 2008 &ndash; Aug 2009 &middot; Anaheim, CA</p>
         <ul>
             <li>Built a new company website using the Kohana PHP framework, with OSCommerce for e-commerce.</li>
             <li>Designed retail product packaging from concept through print-ready production.</li>
@@ -445,7 +482,7 @@
 
     <div class="card job">
         <h3>IT Manager</h3>
-        <p class="job-meta">VinoTemp &middot; Oct 2006 &ndash; Nov 2007</p>
+        <p class="job-meta">VinoTemp &middot; Oct 2006 &ndash; Nov 2007 &middot; Rancho Dominguez, CA</p>
         <ul>
             <li>Built a new company website using the Kohana PHP framework, with OSCommerce for e-commerce, plus Scriptaculous, MooTools and Flash animation on the front end.</li>
             <li>Set up and maintained EDI connections with Walmart and Best Buy using Sterling Commerce and True Commerce, and synchronized product data through the Global Data Synchronization Network (GDSN).</li>
@@ -455,7 +492,7 @@
 
     <div class="card job">
         <h3>Owner / Operator</h3>
-        <p class="job-meta">Pearshapeboy Apparel &amp; JCI Graphics &middot; 2003 &ndash; 2006 &middot; Fullerton, CA</p>
+        <p class="job-meta">Pearshapeboy Apparel &amp; JCI Graphics &middot; 2003 &ndash; 2006 &middot; Fullerton &amp; Santa Fe Springs, CA</p>
         <p>Ran two businesses out of the same shop: my own apparel company, Pearshapeboy Apparel, and my father&rsquo;s awning graphics company, JCI Graphics.</p>
         <ul>
             <li>Pearshapeboy Apparel: handled the full photographic screen printing process for apparel and promotional products, from film output to emulsion and multi-color print runs.</li>
@@ -465,13 +502,193 @@
 
     <div class="card job">
         <h3>CAD/CAM Draftsman / Modeler</h3>
-        <p class="job-meta">Boeing / McDonnell Douglas &middot; 1994 &ndash; 1997</p>
+        <p class="job-meta">Boeing / McDonnell Douglas &middot; 1994 &ndash; 1997 &middot; Long Beach, CA</p>
         <ul>
             <li>3D CAD modeling and technical drafting with Unigraphics (NX) in the aircraft manufacturing industry, working to ISO-9001 quality standards.</li>
             <li>Drafted technical drawings by hand on vellum, and used scribing and ink techniques on Scribecoat film for precision technical illustration.</li>
         </ul>
     </div>
 </section>
+
+<div class="fade">
+
+<hr class="section-divider">
+
+<section id="pre-career">
+    <h2>Pre-Career Jobs</h2>
+
+    <div class="card job">
+        <h3>Telemarketer</h3>
+        <p class="job-meta">Harrison Marketing &middot; 1993 &middot; Tustin, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Receptionist / Telemarketer</h3>
+        <p class="job-meta">Amaro Realty &middot; 1993 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Receptionist</h3>
+        <p class="job-meta">Aquarian Realty &middot; 1992 &middot; Anaheim, CA</p>
+    </div>
+</section>
+
+<hr class="section-divider">
+
+<section id="explorations">
+    <h2>Explorations of Work Life</h2>
+
+    <div class="card job">
+        <h3>CTO</h3>
+        <p class="job-meta">BaubleBox &middot; 2013 &middot; Brea, CA</p>
+        <ul>
+            <li>CTO of a tiny, microscopic company.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Driver</h3>
+        <p class="job-meta">Uber &middot; 2007 &ndash; 2010 &middot; Everywhere</p>
+    </div>
+
+    <div class="card job">
+        <h3>Retail Worker</h3>
+        <p class="job-meta">Office Depot &middot; 2006 &middot; Buena Park, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Product Tester</h3>
+        <p class="job-meta">P&amp;K Research &middot; 2005 &middot; Santa Ana, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Retail Worker</h3>
+        <p class="job-meta">Cost Plus World Market &middot; 2004 &middot; Brea, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Call Center Operator</h3>
+        <p class="job-meta">Wine Country Gift Baskets &middot; 2003 &ndash; 2004 &middot; Brea, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Taxi Driver</h3>
+        <p class="job-meta">Yellow Cab &middot; 2003 &ndash; 2004 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Store Setup</h3>
+        <p class="job-meta">A&amp;S Bargain Books &middot; 2003 &middot; Yorba Linda, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Delivery Driver</h3>
+        <p class="job-meta">Papa John&rsquo;s Pizza &middot; 2003 &middot; Placentia, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>IT Technology Installer / Office Mover</h3>
+        <p class="job-meta">InnerVision &middot; 2003 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Warehouse Worker</h3>
+        <p class="job-meta">American Securities &middot; 2003 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Bender</h3>
+        <p class="job-meta">Adrian Barrios Sheet Metal &middot; 2003 &middot; Fullerton, CA</p>
+        <ul>
+            <li>Yes, like Futurama.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Taxi Driver</h3>
+        <p class="job-meta">A-Taxi &middot; 2003 &middot; Santa Ana, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Flatbed Truck Driver</h3>
+        <p class="job-meta">Simpson Buick/Chevrolet &middot; 2002 &ndash; 2003 &middot; Buena Park, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Paint Department</h3>
+        <p class="job-meta">Home Depot &middot; 2002 &middot; Orange, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Editor in Chief</h3>
+        <p class="job-meta">The Hornet &middot; c. 2002 &middot; Fullerton, CA</p>
+        <ul>
+            <li>Paid position editing the college newspaper, laying out the weekly paper in QuarkXpress and producing graphics with Adobe Creative Suite.</li>
+        </ul>
+    </div>
+
+    <div class="card job">
+        <h3>Store Manager</h3>
+        <p class="job-meta">Crown Books &middot; 2001 &ndash; 2002 &middot; Whittier, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Cell Phone Sales</h3>
+        <p class="job-meta">MCI Wireless &middot; 2001 &middot; Brea, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Retail / Sales</h3>
+        <p class="job-meta">Radio Shack &middot; 2001 &middot; Pico Rivera, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Delivery Driver</h3>
+        <p class="job-meta">Papa John&rsquo;s Pizza &middot; 2001 &middot; Cypress, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Marketing / Merchandising</h3>
+        <p class="job-meta">Tower Records &middot; 2001 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Store Setup</h3>
+        <p class="job-meta">A&amp;S Bargain Books &middot; 2001 &middot; Costa Mesa, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Supervisor</h3>
+        <p class="job-meta">The Warehouse Music &middot; 2000 &middot; Fullerton, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Supervisor</h3>
+        <p class="job-meta">Tower Records &middot; 2000 &middot; Brea, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Book Buyer</h3>
+        <p class="job-meta">Tower Records &middot; 1999 &ndash; 2000 &middot; Long Beach, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Store Setup</h3>
+        <p class="job-meta">A&amp;S Bargain Books &middot; 1999 &middot; Long Beach, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Retail Worker</h3>
+        <p class="job-meta">A&amp;S Bargain Books &middot; 1999 &middot; Anaheim, CA</p>
+    </div>
+
+    <div class="card job">
+        <h3>Retail Clerk / Supervisor / Manager</h3>
+        <p class="job-meta">Tower Records &middot; 1998 &ndash; 1999 &middot; Anaheim, CA</p>
+    </div>
+</section>
+
+<hr class="section-divider">
 
 <section id="contact">
     <h2>Contact</h2>
@@ -481,6 +698,8 @@
         <a href="https://www.linkedin.com/in/dallascaley/" class="btn">LinkedIn</a>
     </p>
 </section>
+
+</div>
 
 <footer>
     <p>&copy; 2026 Dallas Caley. All rights reserved.</p>
